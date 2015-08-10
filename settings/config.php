@@ -1,9 +1,9 @@
 <?php
 $config = array(
-	'username' => 'u153170626_srk',
-	'password' => '42611qazokm',
-	'database'=>'u153170626_colo',
-	'hostname'=>'mysql.hostinger.in',
+	'username' => 'admin8irhRKl',
+	'password' => 'IzzvCxAIEtv3',
+	'database'=>'colosseum',
+	'hostname'=>'127.3.76.130:3306',
 	'db_driver'=>'mysql'
 
 );
