@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html >
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style/jquery.ui.all.css">
+    <!--div {
+  text-align: center;
+  vertical-align: middle;
+  -moz-background-clip: border;
+  height: 300px;
+  width: 500px;
+  
+  border: 3px ridge #CCC;
+  visibility: visible;
+  float: left;
+  display: inherit;
+  left: 30%;
+  top: 23%;
+}-->
+<style type="text/css">
+.toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect {
+	width: 320px;
+	height: 155px;
+	padding: 0.4em;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	display: inherit;
+	left: 36%;
+	top: 30%;
+}
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+    .ui-effects-transfer { border: 2px dotted gray; }
+#button {
+	text-decoration: none;
+	height: 5px;
+	padding-top: 0.5em;
+	padding-right: 1em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+}
+
+table {
+	position: relative;
+	padding: 0px;
+	margin: 10px;
+	width: 294px;
+	height: 110px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="effect" class="ui-widget-content ui-corner-all">
+<form action="login.php" method="post" id="frm1">
+  <table width="349" height="111" border="0" align="center" >
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td style="text-align:right"><label>Username</label>&nbsp;</td>
+      <td><label for="textfield"></label>
+        <input type="text" name="uname" id="uname" placeholder="username" requierd></td>
+      </tr>
+    <tr>
+      <td style="text-align:right"><label>Password</label>&nbsp;</td>
+      <td><input name="passwd" type="password" id="passwd" placeholder="password"></td>
+      </tr>
+    <tr>
+      <td colspan="2" style="text-align:center">&nbsp;</td>
+      <label id="showm"></label>
+      </tr>
+    <tr align="center" colspan="2">
+      
+      <td colspan="2">
+        <a href="#" id="button" value="Login" tabindex="2" class="ui-state-default ui-corner-all">Login</a></td>
+      </tr>
+  </table>
+  </form>
+
+        
+</div>
+
+<a href="#" id="wbutton" class="ui-state-default ui-corner-all" >run</a>
+<script src="script/jquery.js"></script>
+<script src="script/jquery.ui.effect.js"></script>
+<script src="script/jquery.ui.effect-explode.js"></script>
+  
+<script>
+  $(function() {
+ 
+    function runEffect() {
+   
+      var options = {};
+      
+      $( "#effect" ).effect( "explode", options, 1000);
+       //console.log('hi');
+    };
+    
+    // set effect from select menu value
+    $( "#button" ).click(function() {
+      runEffect();
+	  $('#frm1').delay(10000);
+	  
+	  $('#frm1').submit();
+      return false;
+    });
+    
+  });
+
+</script>
+</body>
+</html>

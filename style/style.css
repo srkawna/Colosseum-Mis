@@ -1,0 +1,146 @@
+﻿#main{
+	
+	position:absolute;
+	box-shadow: #666;
+	border-top-style: 1;
+	border-right-style: 1;
+	border-bottom-style: 1;
+	border-left-style: 1;
+	border-top-color: #999;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #999;
+	
+}
+#menubar {
+	display: block;
+	padding: 5px;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	background-color: #099;
+	top: 0px;
+	text-align:right;
+	color: #000;
+	left: 0 px;
+	right: 0px;
+	border: 1px inset #066;
+	opacity:0.9;
+	box-shadow:7px 10px 10px #999;
+	
+}
+#center
+{
+	z-index:-1;
+}
+body {
+	background-color: #FFF;
+	font-family: "Courier New", Courier, monospace;
+	padding-right: 15%;
+	padding-left: 15%;
+	text-align: center;
+}
+label {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	position: absolute;
+	right: 10px;
+	top:70px;
+	
+}
+
+
+
+#showpane
+{
+	width: 120px;
+	height: 100%;
+	border: thin solid #006666;
+	position: fixed;
+	top: 0px;
+	float: right;
+	right: 0px;
+	text-align:center;
+	
+	background-color: #383838;
+	
+}
+#showpane a:hover
+{
+	background-color:#999;
+}
+#showpane ul
+{
+	margin-top:0px;
+	float:right;
+	list-style-type: none;
+	width:120px;
+	color:#CCC;
+}
+img {
+	background-position: 0px -112px;
+}
+#showpane li
+{
+	height:60px
+	background-color:#999;
+	
+}
+#pane
+{
+width: 5px;
+	height: 100%;
+	
+	position: fixed;
+	top: 0px;
+	float: right;
+	right: 0px;
+	
+	opacity:0.0
+	background-color: #000;
+	
+	
+}
+	#showpane li 
+		{
+		
+		margin-top:1px;
+			
+		}
+		#showpane a 
+		{
+			display:block;
+
+			text-decoration:none;
+			width:120px;;
+			
+			height: 90px;
+			vertical-align:middle;
+			padding:8px;
+			text-align:center;
+			font-size:20px;
+			color: #838383;
+			font-family:"Courier New", Courier, monospace
+			
+			
+		}
+		#showpane li a:hover
+		{
+			width:100%;
+			background-color:#4F4F4F;			
+			
+			
+
+		}
+		#showpane ul {
+		
+		}
+
+.ui-icon white{
+background-image: url(images/ui-icons_cccccc_256x240.png);
+}
+#centerpane
+{
+	padding-right:15%;
+	padding-left:15%;
+}

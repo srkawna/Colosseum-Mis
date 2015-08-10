@@ -1,0 +1,127 @@
+CREATE TABLE `events` (
+   `eid` int(10) not null auto_increment,
+   `name` varchar(30) not null,
+   `expentries` decimal(10,0) not null,
+   `efee` decimal(10,0) not null,
+   `edate` varchar(60),
+   PRIMARY KEY (`eid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=23;
+
+INSERT INTO `events` (`eid`, `name`, `expentries`, `efee`, `edate`) VALUES 
+('16', 'Techies', '100', '100', '10/14/2014'),
+('17', 'Hobit', '100', '100', '10/14/2014'),
+('18', 'JunkYard Wars', '100', '100', '10/14/2014'),
+('19', 'Blind C', '150', '100', '10/14/2014'),
+('20', 'Mind BLogging', '50', '250', '10/14/2014'),
+('21', 'Relic Hunters', '110', '100', '10/14/2014'),
+('22', 'Webster', '150', '100', '10/14/2014');
+
+CREATE TABLE `participants` (
+   `pid` int(10) not null auto_increment,
+   `name` varchar(50),
+   `email` varchar(40),
+   `eid` varchar(10),
+   `apaid` decimal(6,0),
+   `rdate` varchar(20),
+   `college` varchar(50),
+   `mobileno` decimal(12,0),
+   PRIMARY KEY (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=76;
+
+INSERT INTO `participants` (`pid`, `name`, `email`, `eid`, `apaid`, `rdate`, `college`, `mobileno`) VALUES 
+('12', 'Kewal Kalantari', 'kkalantari@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9823365474'),
+('13', 'isha Chawrae', 'chawreesh@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '982654783'),
+('14', 'Urja Upadhaye', 'uurja@gmailcom', '16', '100', '13/10/2014', 'RCOEM', '7756214831'),
+('16', 'Anurag singh', 'anurag@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9456321785'),
+('17', 'Madhuri Tayal', 'tayal@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9867451234'),
+('18', 'Aishwarya jain', 'aishwar@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9856321478'),
+('19', 'Ajay Kabra', 'kabs@gmail.com', '16', '100', ' 13/10/2014', 'RCOEM', '7789654123'),
+('20', 'Ajay Kabra', 'kabs@gmail.com', '17', '100', ' 13/10/2014', 'RCOEM', '7789654123'),
+('21', 'Indu kanojia', 'kanjiaindre@gmail.com', '18', '100', '13/10/2014', 'S B Jain', '9624482828'),
+('22', 'Noureen Khan', 'Khansahab@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7785963214'),
+('23', 'Noureen Khan', 'Khansahab@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7785963214'),
+('24', 'Rashika gupta', 'guptarash@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '9477856321'),
+('25', 'Wani Bisen', 'bisswani@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7754896123'),
+('26', 'Ajay Reddy', 'reddyajay@yaho.com', '20', '250', '13/10/2014', 'RCOEM', '7785649321'),
+('27', 'Harshal Garg', 'gargharsh@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7758964123'),
+('28', 'Diksha Tripathy', 'tripathy@gmail.com', '17', '100', '13/10/2014', 'RCOEM', '9855647123'),
+('29', 'Pratibha Kokardekar', 'Kokardekar@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7855496321'),
+('30', 'Ashita Basole', 'baso@gmail.com', '17', '100', '13/10/2014', 'RCOEM', '9855647123'),
+('31', 'Akhil Gupta', 'Gupts@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7588461923'),
+('32', 'Alpesh Kasturiwala', 'kastur@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '9874546321'),
+('33', 'Prakash Pandey', 'pandey@gmail.com', '19', '100', '13/10/2014', 'RCOEM', '9855764123'),
+('34', 'Viresh Dhawan', 'dhawale@gmail.com', '18', '100', '13/10/2014', 'RCOEM', '7855967895'),
+('35', 'Hina Shivhare', 'shiva@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7899478956'),
+('36', 'Amit Pande', 'Panda@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9877456147'),
+('37', 'Shreya Barahate', 'bababre@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7894465123'),
+('38', 'Shubham Authankar', 'shuauthu@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7894156456'),
+('39', 'Shubham khapre', 'khapu@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9877654178'),
+('40', 'Himanshu Patle', 'patle@gmail.com', '19', '100', '13/10/2014', 'RCOEM', '7844596142'),
+('41', 'Rishab Rastogi', 'rasyo@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7844985632'),
+('42', 'Priyal Kulkarni', 'kulupriya@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9844567123'),
+('43', 'Sonali Jetha', 'sallu@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7855496145'),
+('44', 'Anuja Fole', 'folefole@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9844576123'),
+('45', 'Gaurav Bhartiya', 'Bharu@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7833145962'),
+('46', 'Diksha Agrawal', 'diksi@gmail.com', '18', '100', '13/10/2014', 'RCOEM', '7433146985'),
+('47', 'Kanupria Agrawal', 'kanupri@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7411258963'),
+('48', 'Anmol Jaiswal', 'precious@gmail.com', '17', '100', '13/10/2014', 'RCOEM', '7433652189'),
+('49', 'Manoj Sarve', 'saru@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '7566984123'),
+('50', 'Krishna Sawale', 'sawu@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9122456378'),
+('51', 'Ganesh Thakur', 'thakuitwari@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '7466182359'),
+('52', 'Charu Thaore', 'thoa@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '9844675123'),
+('53', 'Ayushi Katre', 'kat@gail.com', '16', '100', '13/10/2014', 'RCOEM', '7844951623'),
+('54', 'Archit Todi', 'archu@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9877654145'),
+('55', 'Sumit Kumar', 'sumi@gmail.com', '16', '100', '13/10/2014 ', 'RCOEM', '7844596321'),
+('56', 'charulata lodha', 'charul@gmail.com', '20', '250', '13/10/2014', 'RCOEM', '9657856248'),
+('57', 'Lakhan Agrawal', 'Lagra@gamil.com', '16', '100', '13/10/2014', 'RCOEM', '7895426845'),
+('58', 'Tushar Godvani', 'Tgod@gmail.com', '17', '100', '13/10/2014', 'RCOEM', '9854759658'),
+('59', 'Samrat Jain', 'sjain@gmail,com', '20', '250', '13/10/2014', 'RCOEM', '8754236897'),
+('60', 'Naman Bajaj', 'Nbajaj@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '9875423698'),
+('61', 'Arpit Kahandalwar', 'Akan@gmail.com', '17', '100', '13/10/2014', 'RCOEM', '98745698547'),
+('62', 'Mansi Mor', 'Mmor@gmail.com', '18', '100', '13/10/2014', 'RCOEM', '9875425789'),
+('63', 'Saksham Singh', 'ssing@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '9857426589'),
+('64', 'Sakura Chaware', 'sakuraharuno@gmail.com', '18', '100', '13/10/2014', 'RCOEM', '9632147852'),
+('65', 'Shristi Jaju', 'sjaju@gmail.com', '19', '100', '13/10/2014', 'RCOEM', '9658741256'),
+('66', 'Vrushali Agrawal', 'agrawalv@gmail.com', '18', '100', '13/10/2014', 'RCOEM', '8521479631'),
+('67', 'Deepam Dembla', 'ddmpla@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '7852145698'),
+('68', 'Rahul Shrivastava', 'rrshri@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '7458216985'),
+('69', 'Kalyani Jog', 'kallo@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '9874521598'),
+('70', 'Shivani Pahdre', 'shiv@gmail.com', '16', '100', '13/10/2014', 'RCOEM', '7456985214'),
+('71', 'naman bajaj', 'naman@gmail.com', '17', '100', '10/08/2014', 'rcoem', '8456321456'),
+('72', 'gaurav mattani', 'g@gmsil.com', '20', '250', '10/08/2014', 'rcoem', '9845632145'),
+('73', 'anuja', 'a@gmail.com', '20', '250', '10/09/2014', 'rceom', '9845632145'),
+('74', 'hjhjhhh   ', '', '16', '0', '', '', '0'),
+('75', '', '', '16', '0', '', '', '0');
+
+CREATE TABLE `system_users` (
+   `password` varchar(30),
+   `role` varchar(20) not null,
+   `username` varchar(25) not null,
+   `pro_pic` varchar(50) not null,
+   `email` varchar(50) not null,
+   `name` varchar(50),
+   PRIMARY KEY (`email`),
+   UNIQUE KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `system_users` (`password`, `role`, `username`, `pro_pic`, `email`, `name`) VALUES 
+('', '', 'nitins311', '', 'singhns@rknec.edu', 'nitin'),
+('123', 'normal', 'suyash', '', 'srkawna@gmail.com', 'suyash rk'),
+('123456', 'admin', 'srk', '', 'srkawna@hotmail.com', 'suyash admin');
+
+CREATE TABLE `volunteers` (
+   `email` varchar(100) not null,
+   `name` varchar(50),
+   `year` decimal(5,0),
+   `branch` varchar(50),
+   `volid` int(10) not null auto_increment,
+   `mobile` decimal(10,0),
+   PRIMARY KEY (`volid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=9;
+
+INSERT INTO `volunteers` (`email`, `name`, `year`, `branch`, `volid`, `mobile`) VALUES 
+('mail2.suyash@rediffmail.com', 'suyash', '2', 'IT', '2', '8983688848'),
+('rj@rediffmail.com', 'Rajat ', '3', 'IT', '5', '9845632541'),
+('Kawna@gmail.com', 'Suyash Kawna', '4', 'IT', '6', '9845576321'),
+('Kanojiainder@gmail.com', 'Inder Kanojia', '3', 'IT', '7', '9647851234'),
+('Khajanchiindar@gmail.com', 'Indar Khajanchi', '3', 'IT', '8', '9945123654');

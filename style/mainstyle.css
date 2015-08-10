@@ -1,0 +1,17 @@
+#menubar {
+	display: block;
+	padding: 5px;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	background-color: #099;
+	top: 0px;
+	text-align:right;
+	color: #000;
+	left: 0 px;
+	right: 0px;
+	border: 1px inset #066;
+	opacity:0.9;
+	box-shadow:7px 10px 10px #999;
+	
+}
