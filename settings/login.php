@@ -34,7 +34,7 @@ use Web\DB;
 	else
 	{
 		echo "Connection lost";
-		die();
+		//die();
 	}
 
 ?>
