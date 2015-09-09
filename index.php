@@ -95,7 +95,7 @@ table {
     <tr align="center" colspan="2">
       
       <td colspan="2">
-        <a href="#" id="button" value="Login" tabindex="3" class="ui-state-default ui-corner-all">Login</a></td>
+        <a href="#" id="button" value="Login...!" tabindex="3" class="ui-state-default ui-corner-all">Login</a></td>
       </tr>
   </table>
   </form>
