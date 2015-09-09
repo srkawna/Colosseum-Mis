@@ -75,7 +75,7 @@ table {
 <form action="settings/login.php" method="post" id="frm1"> 
   <table width="349" height="111" border="0" align="center" >
     <tr >
-      <td colspan="2">LOGIN..!</td>
+      <td colspan="2">LOG-IN</td>
       
       </tr>
     <tr>
